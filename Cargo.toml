@@ -10,19 +10,19 @@ repository = "https://github.com/kamupay/jwk-rs"
 version = "1.0.24-alpha.10"
 
 [dependencies]
-base64 = "0.13"
-bitflags = "1.2"
-generic-array = "0.14"
-jsonwebtoken = { version = "8.0", optional = true }
+base64 = "0.22"
+bitflags = "2.6"
+generic-array = "1.1"
+jsonwebtoken = { version = "9.3", optional = true }
 num-bigint = { version = "0.4", optional = true }
-p256 = { version = "0.10", optional = true, features = ["arithmetic"] }
+p256 = { version = "0.13", optional = true, features = ["arithmetic"] }
 rand = { version = "0.8", optional = true }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
 sha2 = { version = "0.10", optional = true }
 thiserror = "1.0"
 yasna = { version = "0.5", optional = true, features = ["num-bigint"] }
-zeroize = { version = "1.5", features = ["zeroize_derive"] }
+zeroize = { version = "1.8", features = ["zeroize_derive"] }
 
 [features]
 generate = ["p256", "rand"]
